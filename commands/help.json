@@ -1,0 +1,30 @@
+{
+    "helpEmbed": {
+        "color": "0xfcfb00",
+        "title": "Help Page",
+        "description": "This is a Bot to play arround and develope new features.\n This Bots main reason to exist is Testing",
+        "thumbnail": {
+            "url": "https://i.imgur.com/adNVU2I.png"
+        },
+        "fields": [
+            {
+                "name": "\u200b\nGeneral Commands:",
+                "value": "`.help`: Displays a Help Page\n`.author`: To contact the Author\n`.biegdich`: For a little Insider\n`.clear [number]`: Clears text messages (1-100)"
+            },
+            {
+                "name": "Music Commands:",
+                "value": "`.play [URL or TITEL]` or `.p`For playing music\n`.skip` To skip to the next song in the queue\n`.stop` or `.leave` or `.dc` Stops the Bot"
+            },
+            {
+                "name": "Other:",
+                "value": "`.ping` Expect a pong\n\u200b"
+            }
+        ],
+        "timestamp": "",
+        "footer": {
+            "text": "Created by Flathill",
+            "icon_url": "https://i.imgur.com/adNVU2I.png"
+        }
+    }
+}
+    
