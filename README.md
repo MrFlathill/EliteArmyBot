@@ -5,6 +5,8 @@ The Structure has been heavily inspired by CodeLyon
 
 How to install node.js and discord.js: https://discordjs.guide/preparations/
 
+npm install discord.js
+
 npm i @discordjs/opus
 
 npm i ytdl-core
