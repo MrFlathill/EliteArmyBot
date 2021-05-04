@@ -17,7 +17,7 @@
             },
             {
                 "name": "Other:",
-                "value": "`.ping` Expect a pong\n\u200b"
+                "value": "`.ping` Expect a pong\n`.temp` Temprature of the PI 4\n`.clock` Clock Speed of the PI 4\n\u200b"
             }
         ],
         "timestamp": "",
