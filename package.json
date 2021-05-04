@@ -15,6 +15,6 @@
     "dotenv": "^8.2.0",
     "fs": "0.0.1-security",
     "yt-search": "^2.8.0",
-    "ytdl-core": "^4.5.0"
+    "ytdl-core": "^4.7.0"
   }
 }

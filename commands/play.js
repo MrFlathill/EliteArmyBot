@@ -92,6 +92,7 @@ const video_player = async (guild, song) => {
         song_queue.songs.shift();
         video_player(guild, song_queue.songs[0]);
     });
+    console.log(`Now playing ${song.title}`);
     await song_queue.text_channel.send(`:notes: Now playing **${song.title}**`)
 
 }
@@ -101,7 +102,6 @@ const skip_song = (message, server_queue) => {
     if(!server_queue){
         return message.channel.send('There are no songs in queue!');
     }
-
     server_queue.connection.dispatcher.end();
 }
 
@@ -110,6 +110,8 @@ const stop_song = (message, server_queue, cmd) => {
     if(cmd === 'idi_nahui') {
         message.channel.send('Сука блядь :face_with_symbols_over_mouth:');
     }
-    server_queue.songs = [];
-    server_queue.connection.dispatcher.end();
+    if(message.guild.me.voice.channel !== null){
+        server_queue.songs = [];
+        server_queue.connection.dispatcher.end();
+    }
 }
