@@ -8,11 +8,11 @@ module.exports = {
         
         if (cmd === 'temp') {
             output = execSync('vcgencmd measure_temp', { encoding: 'utf-8' });  // the default is 'buffer'
-            return message.channel.send(output);
+            return await message.channel.send(output);
 
         }else if (cmd === 'clock') {
             output = execSync('vcgencmd measure_clock arm', { encoding: 'utf-8' });
-            return message.channel.send(output);
+            return await message.channel.send(output);
 
         } else {
             return message.reply('Wrong Argument!');
