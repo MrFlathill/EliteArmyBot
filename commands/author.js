@@ -3,18 +3,15 @@ module.exports = {
     aliases: ['owner'],
     description: "Outputs the Author",
     execute(message, args, Discord){
-        const rnd = parseInt(Math.random()*4);
+		const messages = [
+			"I have been created by ***Flathill#2014***",
+			"My Author is ***Flathill#2014***",
+			"My creator calls himself ***Flathill#2014***",
+			"Bot.parents() = ***Flathill#2014***"
+		];
 
-        switch (rnd) {
-            case 0:
-                return message.channel.send("I have been created by ***Flathill#2014***");
-            case 1:
-                return message.channel.send("My Author is ***Flathill#2014***");
-            case 2:
-                return message.channel.send("My creator calls himself ***Flathill#2014***");
-            case 3:
-                return message.channel.send("Bot.parents() = ***Flathill#2014***");
-        }
+		const message = messages[Math.floor(Math.random()*items.length)];
 
+		return message.channel.send(message);
     }
 }
